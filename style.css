@@ -1,0 +1,483 @@
+
+/*menu on smartphones etc. */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+
+
+/*menu on laptops etc. */
+  .grid-container {
+    display: grid;
+    height: 100vh;
+
+  }
+
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+
+
+/*Frontpage*/
+
+
+
+/*header adjustments */
+.header {
+  display: grid;
+  justify-content: center;
+  font-family: "montserrat",sans-serif;
+  letter-spacing: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: #000000;
+  color: white;
+  width: auto;
+  height: 400px;
+
+}
+
+.mainportrait {
+  display: grid;
+  width: 400px;
+  height: auto;
+  grid-column: 2/3;
+  margin-left: 150px;
+}
+
+
+.textboks{
+  display: 1/2;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 200;
+  color: black;
+  background-color: #a7a7a7;
+  padding: 20px;
+  margin: 20px;
+}
+
+.titel {
+margin-top: 20px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 2px;
+  letter-spacing: 3px;
+  font-weight: 900;
+
+}
+
+.undertitel {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 2px;
+  opacity: 40%;
+  font-weight: 300;
+}
+
+.paragraf {
+  font-size: 14px;
+  text-align: left;
+  line-height: 22px;
+
+}
+
+.aboutmebutton {
+  background-color: #ffa500;
+  border: none;
+  color: black;
+  padding: 15px 42px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  letter-spacing: 0px;
+  justify-content: inline-block;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 40px;
+}
+
+
+
+/*menu adjustments */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  flex-direction: column;
+  font-family: "montserrat",bold;
+  background-color: #a7a7a7;
+}
+
+.menu ul{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+.logo {
+  width: 20rem;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+
+.menu ul a{
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  }
+
+  .menu ul a:hover {
+      color: lightgrey;
+  }
+
+  .iconstyle {
+    margin-top: 50px;
+    height: 2rem;
+    width: auto;
+    margin-left: 20px;
+  }
+
+/*content adjustments */
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.boks1 {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.billede1 {
+  width: 100%;
+  height: auto;
+}
+
+.seemorebutton1 {
+  position: absolute;
+  font-family: "montserrat";
+  font-weight: bold;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffa500;
+  color: black;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.boks2 {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.billede2 {
+  width: 100%;
+  height: auto;
+}
+
+.seemorebutton2 {
+  position: absolute;
+  font-family: "montserrat";
+  font-weight: bold;
+  top: 75%;;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #ffa500;
+  color: black;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/*footer adjustments */
+.footer {
+  display: flex;
+  justify-content: center;
+height: 200px;
+width: auto;
+
+}
+
+.footertext {
+  border-top: 3px solid #ffa500;
+  margin-top: 30px;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  font-size: 15px;
+  font-family: "montserrat";
+}
+
+
+
+
+/*Aboutme page*/
+
+.headertext {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutmegrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.portraitaboutme {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 10px #a7a7a7;
+  grid-column: 1/2;
+  margin: 40px;
+}
+
+.textboxabout {
+  grid-column: 2/3;
+  margin-top: 80px;
+  border-top: 3px solid #ffa500;
+  margin-left: 20px;
+  position: relative;
+  width: 450px;
+  height: 400x;
+  padding-top: 50px;
+  font-family: "montserrat";
+  font-weight: 500;
+  text-align: left;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.kontaktboks {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+  font-family: "montserrat";
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+.contactbutton {
+  background-color: #ffa500;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  letter-spacing: 0px;
+  justify-content: inline-block;
+  margin-top: 40px;
+}
+
+
+
+/*Contactme page*/
+
+.section {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 2%;
+  margin-bottom: 2rem;
+
+}
+
+.contactform {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 50px;
+  margin-top: 20px;
+
+}
+
+.name {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  width: 50%;
+  border: solid#a7a7a7  3px;
+  margin-bottom: 10px;
+
+}
+
+.email {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  width: 50%;
+  border: solid#a7a7a7  3px;
+  margin-bottom: 10px;
+}
+
+.message {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  width: 95%;
+  height: 75%;
+  border: solid#a7a7a7  3px;
+}
+
+.submit {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffa500;
+  padding: 10px 40px;
+  border: solid#ffa500  2px;
+  border-radius: 20px;
+  margin-top: 20px;
+
+}
+
+.contactimage {
+  padding: 50px;
+}
+
+.portrait {
+  width: 450px;
+  height: auto;
+  box-shadow: 0 0 10px #a7a7a7;
+
+}
+
+
+
+/*photography page*/
+
+.photogallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  width: 450px;
+  height: auto;
+  margin: 20px;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+
+/*graphicdesign page*/
+
+.menu {
+  flex-direction: row;
+
+}
+
+.menu a {
+  display: none;
+
+}
+
+
+/*Reponsiv mobile version*/
+.grid-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header"
+  "menu"
+  "main"
+  "footer"
+
+   }
+
+.mainportrait {
+    grid-area: "header";
+}
+
+.billede1 {
+  grid-area: "main";
+}
+
+
+@media screen and (min-width:550px) {
+
+  .menu {
+    flex-direction: column;
+
+  }
+
+  .menu a {
+    display: block;
+
+
+  }
+
+  .grid-container {
+    grid-template-areas:
+        'menu header'
+        'menu main'
+        'menu footer';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 5fr 3fr 2fr;
+
+  }
+
+
+    }
